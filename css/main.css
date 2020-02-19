@@ -1,0 +1,96 @@
+*{
+  font-size: 20px;
+  
+}
+
+#ClayBox{
+
+  background-color: cyan;
+  width: 300px;
+  height: 300px;
+  
+}
+
+#container{
+  
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: dashed 5px black;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+  height: 10px;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 2px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border-radius: 5px;
+  
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+}
+
+#topslidecontainer{
+  position: absolute;
+  top: -17px;
+}
+#bottomslidecontainer{
+  position: absolute;
+  bottom: 0px;
+}
+#leftslidecontainer{
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 48%;
+  left: -55%;
+}
+#rightslidecontainer{
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 48%;
+  left: 50%;
+}
+
+#infoRadious{
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+#valueRadius{
+  width: 19rem;
+}

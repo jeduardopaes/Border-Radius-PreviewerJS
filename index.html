@@ -11,8 +11,26 @@
 <body>
 
   <main>
-    <div id="ClayBox">
 
+    <div id="container">
+      <div id="ClayBox"> </div>
+      <div id="topslidecontainer" class="slidecontainer">
+        <input type="range" min="-50" max="50" value="20" class="slider" id="topSlider">
+      </div>
+      <div id="leftslidecontainer" class="slidecontainer">
+        <input type="range" min="-50" max="50" value="-30" class="slider" id="leftSlider">
+      </div>
+      <div id="rightslidecontainer" class="slidecontainer">
+        <input type="range" min="-50" max="50" value="15" class="slider" id="rightSlider">
+      </div>
+      <div id="bottomslidecontainer" class="slidecontainer">
+        <input type="range" min="-50" max="50" value="-10" class="slider" id="bottomSlider">
+      </div>
+    </div>
+    <div id="infoRadious">
+      <label for="radiusText">Border Radius: </label>
+      <input id="valueRadius" type="text" name="radiusText" />
+      <button onclick="copyText()">Copy text</button>
     </div>
   </main>
   <script src="./js/main.js"></script>
